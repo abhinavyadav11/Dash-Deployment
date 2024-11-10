@@ -30,6 +30,7 @@ external_stylesheets = [
 ]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 # Apply global background style directly in app layout
 app.layout = html.Div(style={'background-color': '#000000', 'padding': '20px'}, children=[
